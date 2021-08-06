@@ -273,14 +273,74 @@ main > .container-why-choose-easybank > .container-description > .container-desc
 SECTION LATEST ARTICLES */
 main > .latest-article {
 
-    padding-top: 95px;
+    padding: 95px 165px 0;
 
     background-color: hsl(0, 0%, 98%);
+}
+
+main > .latest-article > .title-latest-article {
+
+    font-size: 30px;
+
+    margin-bottom: 55px;
+}
+
+main > .latest-article > .container-articles > .articles {
+
+    display: flex;
+    justify-content: space-between;
 }
 
 main > .latest-article > .container-articles > .articles > .article {
 
     background-color: white;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+main > .latest-article > .container-articles > .articles > .article > .image-article > img{
+
+    height: 200px;
+    width: 255px;
+}
+
+main > .latest-article > .container-articles > .articles > .article > .article-author {
+
+    margin: 30px auto 15px;
+
+    color: hsl(233, 8%, 62%);
+
+    width: 200px;
+
+    font-size: 11px;
+
+}
+
+main > .latest-article > .container-articles > .articles > .article > .article-title {
+
+    font-size: 15px;
+
+    width: 200px;
+
+    line-height: 20px;
+
+    margin: 0 auto 9px;
+
+}
+
+main > .latest-article > .container-articles > .articles > .article > .article-text {
+
+    width: 200px;
+
+    font-size: 12px;
+
+    line-height: 20px;
+
+    color: hsl(233, 8%, 62%);
+
+    margin: 0 auto;
 }
 
 /*
@@ -434,22 +494,31 @@ SECTION LATEST ARTICLES */
         margin-bottom: 39px;
     }
 
+    main > .latest-article > .container-articles > .articles {
+
+        flex-direction: column;
+    }
+
     main > .latest-article > .container-articles > .articles > .article {
 
         text-align: start;
 
         width: 327px;
 
-        margin: 0 auto;
+        margin: 0 auto 22px;
+
+        border-radius: 5px;
+    }
+
+    main > .latest-article > .container-articles > .articles > .article:last-child {
+
+        margin-bottom: 90px;
     }
 
     main > .latest-article > .container-articles > .articles > .article > .image-article > img {
 
         height: 200px;
         width: 327px;
-
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
 
         margin-bottom: 30px;
     }
