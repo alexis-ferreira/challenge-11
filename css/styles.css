@@ -422,6 +422,7 @@ SECTION LATEST ARTICLES */
     main > .latest-article {
 
         padding-top: 95px;
+        padding-bottom: 38px;
     }
 
     main > .latest-article > .title-latest-article {
