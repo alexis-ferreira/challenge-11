@@ -1,0 +1,355 @@
+/******************** POLICE ********************/
+
+@font-face {
+    font-family: "Public Sans";
+    src: url("../police/Public_Sans/PublicSans-VariableFont_wght.ttf");
+}
+
+/******************** GENERAL ********************/
+
+body {
+
+    font-family: "Public Sans", sans-serif;
+}
+
+.btn-request {
+
+    height: 44px;
+    width: 163px;
+
+    border-radius: 50px;
+
+    background: rgb(49, 211, 92);
+    background: linear-gradient(90deg, rgba(49, 211, 92, 1) 49%, rgba(43, 218, 183, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-request > a {
+
+    color: white;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+    border-radius: 50px;
+}
+
+
+/******************** HEADER ********************/
+
+/*
+HEADER DESKTOP */
+
+#header-responsive {
+
+    display: none;
+}
+
+#header-desktop {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    position: relative;
+
+    z-index: 3;
+
+    padding: 0 163px;
+
+    height: 80px;
+
+    font-size: 14px;
+}
+
+#header-desktop > .menu-desktop > ul {
+
+    width: 330px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-desktop > .menu-desktop > ul > li > a {
+
+    text-decoration: none;
+
+    color: hsl(233, 8%, 62%);
+}
+
+/*
+RESPONSIVE */
+
+@media all AND (max-width: 1024px) {
+
+    #header-desktop {
+
+        display: none;
+    }
+
+    #header-responsive {
+
+        display: flex;
+        justify-content: space-between;
+
+        height: 64px;
+    }
+
+    #header-responsive > .logo-responsive {
+
+        margin-left: 24px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #header-responsive > #menu-responsive {
+
+        width: 25px;
+
+        margin-right: 24px;
+
+        background: url("../images/icon-hamburger.svg") no-repeat center;
+        background-size: contain;
+    }
+}
+
+/******************** MAIN ********************/
+
+/*
+NEXT GENERATION */
+
+main > .container-next-generation {
+
+    display: flex;
+    align-items: center;
+
+    height: 656px;
+}
+
+main > .container-next-generation > .next-generation {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-left: 163px;
+
+    width: 40%;
+    height: 305px;
+}
+
+main > .container-next-generation > .next-generation > h2 {
+
+    font-size: 45px;
+
+    width: 400px;
+}
+
+main > .container-next-generation > .next-generation > .description-next-generation {
+
+    font-size: 18px;
+    font-weight: 300;
+
+    color: hsl(233, 8%, 62%);
+
+    line-height: 30px;
+
+    width: 431px;
+}
+
+main > .container-next-generation > .container-mobile-application {
+
+    position: relative;
+
+    width: 60%;
+    height: 100%;
+
+    background: url("../images/bg-intro-desktop.svg") -65px -261px;
+
+    overflow: hidden;
+}
+
+#mobile-application-background {
+
+    height: 780px;
+    width: 100%;
+
+    background: url("../images/image-mockups.png");
+
+    z-index: 2;
+
+    position: absolute;
+    top: -120px;
+    right: -125px;
+
+}
+
+/*
+WHY CHOOSE EASYBANK */
+
+main > .container-why-choose-easybank {
+
+    padding-top: 70px;
+
+    background-color: hsl(0, 0%, 98%);
+
+    text-align: center;
+}
+
+main > .container-why-choose-easybank > .title-why-choose-easybank {
+
+    font-size: 27px;
+    font-weight: 300;
+
+    min-width: 175px;
+}
+
+/*
+RESPONSIVE MAIN
+SECTION NEXT GENERATION*/
+
+@media all AND (max-width: 1024px) {
+
+    main > .container-next-generation {
+
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    main > .container-next-generation > .container-mobile-application {
+
+        margin-bottom: 40px;
+
+        height: 310px;
+        width: 100%;
+
+        background-size: cover !important;
+        background: url("../images/bg-intro-mobile.svg") no-repeat right -80px;
+    }
+
+    main > .container-next-generation > .next-generation {
+
+        padding-left: 0;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        height: auto;
+        width: auto;
+        margin-bottom: 90px;
+    }
+
+    main > .container-next-generation > .next-generation > h2 {
+
+        margin-bottom: 25px;
+
+        font-size: 35px;
+        font-weight: 300;
+
+        width: 290px;
+
+        line-height: 45px;
+    }
+
+    main > .container-next-generation > .next-generation > .description-next-generation {
+
+        margin-bottom: 35px;
+
+        font-size: 14px;
+
+        width: 90%;
+        min-width: 305px;
+    }
+
+    #mobile-application-background {
+
+        background-size: 360px;
+
+        height: 100%;
+
+        background-position: center -129px;
+        background-repeat: no-repeat;
+
+        top: 0;
+        left: 0;
+    }
+
+    /*
+RESPONSIVE
+WHY CHOOSE EASYBANK*/
+    main > .container-why-choose-easybank {
+
+        padding-top: 70px;
+
+        background-color: hsl(0, 0%, 98%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > .container-why-choose-easybank > .title-why-choose-easybank {
+
+        font-size: 27px;
+        font-weight: 300;
+
+        width: 175px;
+
+        margin: 0 25px;
+
+        line-height: 37px;
+    }
+
+    main > .container-why-choose-easybank > .description-why-choose-easybank {
+
+        color: hsl(233, 8%, 62%);
+
+        font-weight: 300;
+        font-size: 14px;
+
+        line-height: 26px;
+
+        margin-top: 26px;
+        margin-bottom: 60px;
+
+        width: 300px;
+    }
+
+    main > .container-why-choose-easybank > .container-description-why-choose-easybank {
+
+        height: 210px;
+        width: 320px;
+
+        color: hsl(233, 8%, 62%);
+
+        font-weight: 300;
+        font-size: 14px;
+
+        line-height: 26px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin-bottom: 38px;
+    }
+
+    main > .container-why-choose-easybank > .container-description-why-choose-easybank > .h2-why-choose-easybank {
+
+        color: black;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+}
