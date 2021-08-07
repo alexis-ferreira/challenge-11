@@ -344,6 +344,14 @@ main > .latest-article > .container-articles > .articles > .article > .article-t
 }
 
 /*
+FOOTER */
+
+footer {
+
+    background-color: hsl(233, 26%, 24%);
+}
+
+/*
 RESPONSIVE MAIN
 SECTION NEXT GENERATION*/
 
@@ -469,8 +477,7 @@ WHY CHOOSE EASYBANK*/
         margin-bottom: 30px;
     }
 
-    main > .container-why-choose-easybank > .container-description > .container-description-why-choose-easybank
-    > .text-why-choose-easybank {
+    main > .container-why-choose-easybank > .container-description > .container-description-why-choose-easybank > .text-why-choose-easybank {
 
         width: 320px;
 
@@ -481,8 +488,7 @@ WHY CHOOSE EASYBANK*/
 SECTION LATEST ARTICLES */
     main > .latest-article {
 
-        padding-top: 95px;
-        padding-bottom: 38px;
+        padding: 95px 0 38px;
     }
 
     main > .latest-article > .title-latest-article {
@@ -560,4 +566,5 @@ SECTION LATEST ARTICLES */
         color: hsl(233, 8%, 62%);
     }
 
-}
+
+} /* END RESPONSIVE */
