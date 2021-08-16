@@ -7,6 +7,8 @@
 
 /******************** GENERAL ********************/
 
+
+
 body {
 
     font-family: "Public Sans", sans-serif;
@@ -25,6 +27,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background;
 }
 
 .btn-request > a {
@@ -37,6 +41,23 @@ body {
 
     padding: 13px 25px;
     border-radius: 50px;
+}
+
+#header-desktop > .menu-desktop > ul > li {
+
+    position: relative;
+}
+
+.bottom-border-menu {
+
+    width: 0;
+    height: 4px;
+
+    background: rgb(49, 211, 92);
+    background: linear-gradient(90deg, rgba(49, 211, 92, 1) 49%, rgba(43, 218, 183, 1) 100%);
+
+    position: absolute;
+    bottom: -33px;
 }
 
 
@@ -132,6 +153,8 @@ main > .container-next-generation {
     align-items: center;
 
     height: 656px;
+
+    background: hsl(0, 0%, 98%);
 }
 
 main > .container-next-generation > .next-generation {
@@ -327,6 +350,12 @@ main > .latest-article > .container-articles > .articles > .article > .article-t
     line-height: 20px;
 
     margin: 0 auto 9px;
+
+    color: black;
+
+    display: block;
+
+    text-decoration: none;
 
 }
 
@@ -790,6 +819,6 @@ SECTION LATEST ARTICLES */
         color: hsl(233, 26%, 24%);
     }
 
-    }
+}
 
 /* END RESPONSIVE */
