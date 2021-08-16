@@ -7,7 +7,21 @@
 
 /******************** GENERAL ********************/
 
+#author {
 
+    color: white;
+
+    font-size: 12px;
+
+    padding-bottom: 20px;
+
+    text-align: center;
+}
+
+#author > a {
+
+    color: white;
+}
 
 body {
 
